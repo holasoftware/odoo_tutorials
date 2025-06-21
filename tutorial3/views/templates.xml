@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+<template id="demo_page" name="Demo page">
+    <t t-call="website.layout">
+        <t t-set="head">
+            <style> 
+              body {
+                background-color: #f7f5f6
+              }
+            </style>
+        </t>
+        <t t-set="body_classname">mypage</t>
+
+        <h2>Demo page</h2>
+        <p>var1: <t t-esc="var1"/></p>
+    </t>
+</template>
+</odoo>

@@ -1,0 +1,280 @@
+# Bootstrap 5 Odoo Tutorial Dashboard Template
+
+Here's a complete Bootstrap 5 template for an Odoo tutorial dashboard that includes a TikTok channel link. This template is designed to be used in your OWL component from the previous implementation.
+
+## HTML Template (`admin_panel.xml`)
+
+```xml
+<templates>
+    <div t-name="custom_admin.AdminPanel" class="odoo-tutorial-dashboard">
+        <!-- Header -->
+        <header class="dashboard-header bg-primary text-white p-4 mb-4">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1 class="h3 mb-0">
+                        <i class="fas fa-graduation-cap me-2"></i>Odoo Tutorial Dashboard
+                    </h1>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@your_odoo_channel" target="_blank" class="text-white me-3">
+                            <i class="fab fa-tiktok me-1"></i>Follow on TikTok
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="fas fa-question-circle me-1"></i>Help
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0">Tutorial Categories</h5>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action active">
+                                <i class="fas fa-play-circle me-2"></i>Getting Started
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-cog me-2"></i>Configuration
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-code me-2"></i>Development
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-chart-line me-2"></i>Reporting
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0">Latest TikTok Videos</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="tiktok-embed mb-3" data-unique-id="your_odoo_channel" data-embed-from="oembed">
+                                <section><a target="_blank" href="https://www.tiktok.com/@your_odoo_channel">@your_odoo_channel</a></section>
+                            </div>
+                            <a href="https://www.tiktok.com/@your_odoo_channel" target="_blank" class="btn btn-outline-success w-100">
+                                <i class="fab fa-tiktok me-1"></i>View All Videos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content Area -->
+                <div class="col-md-9">
+                    <div class="card mb-4">
+                        <div class="card-header bg-warning text-dark">
+                            <h5 class="mb-0">Featured Tutorials</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100">
+                                        <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Tutorial">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Odoo Installation</h5>
+                                            <p class="card-text">Learn how to install Odoo on Ubuntu server.</p>
+                                            <a href="#" class="btn btn-sm btn-primary">Watch Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100">
+                                        <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Tutorial">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Module Development</h5>
+                                            <p class="card-text">Create your first Odoo module from scratch.</p>
+                                            <a href="#" class="btn btn-sm btn-primary">Watch Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100">
+                                        <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Tutorial">
+                                        <div class="card-body">
+                                            <h5 class="card-title">OWL Components</h5>
+                                            <p class="card-text">Building modern UIs with OWL in Odoo.</p>
+                                            <a href="#" class="btn btn-sm btn-primary">Watch Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-danger text-white">
+                            <h5 class="mb-0">Quick Links</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row text-center">
+                                <div class="col-md-3 col-6 mb-3">
+                                    <a href="#" class="btn btn-outline-danger w-100 py-3">
+                                        <i class="fas fa-book fa-2x mb-2"></i><br>
+                                        Documentation
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6 mb-3">
+                                    <a href="#" class="btn btn-outline-danger w-100 py-3">
+                                        <i class="fas fa-video fa-2x mb-2"></i><br>
+                                        Video Tutorials
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6 mb-3">
+                                    <a href="https://www.tiktok.com/@your_odoo_channel" target="_blank" class="btn btn-outline-danger w-100 py-3">
+                                        <i class="fab fa-tiktok fa-2x mb-2"></i><br>
+                                        TikTok Channel
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6 mb-3">
+                                    <a href="#" class="btn btn-outline-danger w-100 py-3">
+                                        <i class="fas fa-question-circle fa-2x mb-2"></i><br>
+                                        Support
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="dashboard-footer bg-dark text-white p-3 mt-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">© 2023 Odoo Tutorial Dashboard. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="https://www.tiktok.com/@your_odoo_channel" target="_blank" class="text-white me-3">
+                            <i class="fab fa-tiktok me-1"></i>TikTok
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="fab fa-youtube me-1"></i>YouTube
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="fas fa-envelope me-1"></i>Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</templates>
+```
+
+## SCSS Styling (`admin_panel.scss`)
+
+```scss
+.odoo-tutorial-dashboard {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    .dashboard-header {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        
+        .social-links a {
+            transition: opacity 0.3s;
+            
+            &:hover {
+                opacity: 0.8;
+                text-decoration: none;
+            }
+        }
+    }
+    
+    .card {
+        border: none;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        &-header {
+            font-weight: 600;
+        }
+    }
+    
+    .list-group-item {
+        border-left: none;
+        border-right: none;
+        
+        &.active {
+            font-weight: 600;
+        }
+    }
+    
+    .dashboard-footer {
+        margin-top: auto;
+        
+        a {
+            transition: color 0.3s;
+            
+            &:hover {
+                color: #adb5bd !important;
+                text-decoration: none;
+            }
+        }
+    }
+}
+```
+
+## JavaScript Component (`admin_panel.js`)
+
+```javascript
+/** @odoo-module **/
+
+import { Component, onMounted } from "@odoo/owl";
+
+export class AdminPanel extends Component {
+    static template = "custom_admin.AdminPanel";
+    
+    setup() {
+        onMounted(() => {
+            // Load TikTok embed script when component is mounted
+            const script = document.createElement('script');
+            script.src = "https://www.tiktok.com/embed.js";
+            script.async = true;
+            document.head.appendChild(script);
+        });
+    }
+}
+```
+
+## Key Features:
+
+1. **Responsive Bootstrap 5 Layout**: Clean, modern design that works on all devices
+2. **TikTok Integration**:
+   - TikTok channel link in header
+   - TikTok embed section in sidebar
+   - TikTok quick link button
+   - TikTok link in footer
+3. **Dashboard Sections**:
+   - Tutorial categories sidebar
+   - Featured tutorials cards
+   - Quick links section
+4. **Modern UI Elements**:
+   - Card-based design with hover effects
+   - Color-coded sections
+   - Font Awesome icons
+5. **Proper OWL Integration**: Ready to use in your Odoo module
+
+## Implementation Notes:
+
+1. Replace `your_odoo_channel` with your actual TikTok username
+2. The template includes placeholder images - replace with your actual tutorial thumbnails
+3. The TikTok embed script loads when the component mounts
+4. The design uses Bootstrap 5 utility classes for spacing and layout
+
+To use this template, simply add it to your OWL component as shown in the previous answer, and make sure to include Bootstrap 5 and Font Awesome in your Odoo assets.

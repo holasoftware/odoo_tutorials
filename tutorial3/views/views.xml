@@ -1,0 +1,10 @@
+<odoo>
+    <record model="ir.actions.act_url" id="tutorial3.action_url">
+      <field name="name">tutorial3 action</field>
+      <field name="url">/demo-page</field>
+      <field name="target">new</field>
+    </record>
+
+    <menuitem id="submenu_tutorial" name="Show webpage" parent="menu_tutorial" action="tutorial3.action_url"/>
+    <menuitem id="menu_tutorial" name="Tutorial3" parent="tutorials_base.menu_root" action="tutorial3.action_url"/>
+</odoo>

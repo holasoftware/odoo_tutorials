@@ -1,0 +1,35 @@
+<odoo>
+    <record id="view_user_note_form" model="ir.ui.view">
+        <field name="name">Demo model form</field>
+        <field name="model">tutorial2.my_model</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="field1"/>
+                        <field name="field2"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="tutorial2.list">
+      <field name="name">Demo model list</field>
+      <field name="model">tutorial2.my_model</field>
+      <field name="arch" type="xml">
+        <list>
+            <field name="field1" class="w-100"/>
+            <field name="field2"/>
+        </list>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="tutorial2.action_window">
+      <field name="name">tutorial2 action</field>
+      <field name="res_model">tutorial2.my_model</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="tutorial2.menu_tutorial" name="Tutorial2" parent="tutorials_base.menu_root" action="tutorial2.action_window"/>
+</odoo>

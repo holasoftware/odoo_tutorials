@@ -1,0 +1,9 @@
+<odoo>
+    <record model="ir.actions.client" id="tutorials_dashboard_action">
+        <field name="name">Tutorials dashboard action</field>
+        <field name="tag">tutorials_base.tutorials_dashboard</field>
+    </record>
+
+    <menuitem name="Odoo tutorials" id="menu_root" groups="tutorials_base.group_tutorial"/>
+    <menuitem name="Dashboard" id="menu_dashboard" parent="menu_root" groups="tutorials_base.group_tutorial" action="tutorials_dashboard_action" sequence="1"/>
+</odoo>
