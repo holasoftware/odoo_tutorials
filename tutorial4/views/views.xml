@@ -1,0 +1,11 @@
+<odoo>
+    <record model="ir.actions.client" id="client_action_id">
+        <field name="name">Name of the action</field>
+        <field name="tag">custom_client_action_name</field>
+        <field name="params">{
+            "variable1": "value1"
+        }</field>
+    </record>
+
+    <menuitem id="menu_tutorial" name="Tutorial4" parent="tutorials_base.menu_root" action="client_action_id"/>
+</odoo>

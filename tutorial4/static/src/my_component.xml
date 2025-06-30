@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates xml:space="preserve">
+    <t t-name="your_component_template_name" owl="1">
+        <p>The value of the parameter <b>variable1</b> is: <t t-esc="variable1"/></p>
+    </t>
+</templates>
