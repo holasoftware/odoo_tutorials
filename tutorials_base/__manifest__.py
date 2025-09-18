@@ -4,7 +4,7 @@
     'author': "Miguel Martinez Lopez",
     'category': 'Uncategorized',
     'version': '0.1',
-    'depends': ['base'],
+    'depends': ['web'],
     'data': [
         'security/security.xml',
         'views/views.xml',
